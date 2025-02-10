@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor e Tradição - Home</title>
+    
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/vars.css">
+    <link rel="stylesheet" href="../styles/header-footer-nav.css">
+    <link rel="stylesheet" href="../styles/main-content-estoque.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="header-container">
+        <h1 class="header-title">Sabor & Tradição</h1>
+        <nav class="navbar">
+            <a href="login.html" class="navbar-button"><i class="fas fa-user"></i> Login</a>
+            <a href="pedidos.html" class="navbar-button"><i class="fas fa-utensils"></i> Pedidos & Reservas</a>
+            <a href="kanban.html" class="navbar-button"><i class="fas fa-th"></i> Kanban</a>
+            <a href="../index.html" class="navbar-button"><i class="fas fa-home"></i> Home</a>
+            <a href="estoque.html" class="navbar-button"><i class="fas fa-box"></i> Estoque</a>
+            <a href="relatorios.html" class="navbar-button"><i class="fas fa-chart-line"></i> Relatórios</a>
+            <a href="vendas.html" class="navbar-button"><i class="fas fa-shopping-cart"></i> Painel de Vendas</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1 class="main-title-estoque">Controle de Estoque</h1>
+
+        <div class="input-date-section">
+            <label class="text-input-date" for="data">Selecione uma data:</label>
+            <input class="input-date" type="date" id="data" name="data">
+            <button class="button-input-date" id="buscar-data">Buscar</button>
+            <button class="button-input-date" id="adicionar-produto">Adicionar Produto</button>            
+        </div>
+        <div class="content-table-estoque">
+            <table class="estoque-table">
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th>Preço</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Produto 1</td>
+                        <td>10</td>
+                        <td>R$ 20,00</td>
+                        <td>E/A</td>
+                    </tr>
+                    <tr>
+                        <td>Produto 2</td>
+                        <td>5</td>
+                        <td>R$ 15,00</td>
+                        <td>E/A</td>
+                    </tr>
+                    <!-- Adicione mais produtos conforme necessário -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="copyright">© 2025 BisBranco. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
